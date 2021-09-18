@@ -1,6 +1,6 @@
 #include <windows.h>
 
-void exec(void) {
+void func(void) {
 	system("command_to_execute");
 	return;
 }
@@ -13,7 +13,7 @@ BOOL WINAPI DllMain(
     switch( fdwReason ) 
     { 
         case DLL_PROCESS_ATTACH:
-           exec(); 
+           func(); 
            break;
 
         case DLL_THREAD_ATTACH:
